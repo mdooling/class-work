@@ -4,129 +4,127 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>One Page Index</title>
+	<title>One Page Awesomer</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+	<body>
+	<div id="root">
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">One Page Apps</h1>
-      <h2 class="subtitle">For learning... forever...</h2>
-    </div>
-  </div>
-</section>
+		<section class="section">
 
-<section class="section">
-    <div class="container">
+		    <div class="container">
 
-      <div class="columns">
-      	<div class="column is-two-thirds">
+		      <div class="columns">
 
-      		<h3 class="title">Usage</h3>
+			      <div class="column"> <!-- search column -->
 
-          <hr>
+			      	<h3 class="title">Search Titles</h1>
 
-      		<p>There are a couple of one-page app versions for you to play with:</p>
+		      		<hr>
 
-	         <br>
-      		<p>
-              <a class="button is-outlined is-default" href="./vanilla/index.html">Vanilla</a>
-          </p>
-            <br>
-          <p>
-            ...and
-          </p>
+		      		<p>
+		      			<input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search...">
+		      		</p>
+					
+					<br>
 
-        		<br>
-          <p>
-            <a class="button is-outlined is-primary" href="./awesomer/index.html">Awesomer</a>
-          </p>
+					<p>
+						<a class="button is-primary is-outlined" href="../index.html">Home</a>
+					</p>
+					
 
-            <br>
-	        <p>
-	        	The purpose of these files is to have a raw working version to play with, and nicer one to reference. The rougher "vanilla" version will have comments marking it up so you can remember what is going on. If you get stuck, just re-clone/download, or click through the <a href="https://github.com/jakeYeager/one-page-vue2" target="_blank">Github repo</a> version to see what the origional file looked like.
-	        </p>
-	        <br>
-	        <br>
+			      </div>
 
-	        <h3 class="title">CSS &amp; the UI</h3>
+		      	<div class="column is-two-thirds"> <!-- post column -->
 
-          <hr>
+		      		<h3 class="title">Posts</h1>
+		      		<hr>
 
-	        <p>
-	        	When building your one-page app, think of the final purpose of what your doing or sorting with your app before you craft your final User Interface (or "look-and-feel") with CSS.
-	        </p>
-	        <p>
-	        	Is it a blog, or a store product directory, or a image gallery? The main element you are representing will most often dictate how you set up the final page structure.
-	        </p>
-      	</div>
+						<div v-for="post in filterlist">
 
-      	<div class="column">
+						<div class="box">
 
-      		<h2 class="title">Links</h2>
+							<article class="media">
 
-          <hr>
+    							<div class="media-left">
 
-      		<ul>
+      								<figure class="image is-64x64">
 
-            <li>
-              <i class="fa fa-fw fa-cube"></i> <a href="https://vuejs.org/" target="_blank">Vue2</a> framework
-            </li>
+      									<img :src="post.img">
 
-            <li>
-              <i class="fa fa-fw fa-cube"></i> <a href="https://vuejs.org/v2/examples/" target="_blank">Vue2</a> examples
-            </li>
+      								</figure>
 
-            <li>
-              <i class="fa fa-fw fa-youtube"></i> <a href="https://www.youtube.com/watch?v=VPUdtEf3oXI&t=304s" target="_blank">How-To:</a> this app from scratch
-            </li>
+  								</div>
 
-            <li>
-              <i class="fa fa-fw fa-code"></i> <a href="http://getbootstrap.com/getting-started/" target="_blank">Bootstrap</a> CSS
-            </li>
+								<div class="media-content">
 
-            <li>
-              <i class="fa fa-fw fa-code"></i> <a href="http://materializecss.com/" target="_blank">Material</a> CSS
-            </li>
+						      		<div class="content">
 
-            <li>
-              <i class="fa fa-fw fa-code"></i> <a href="http://bulma.io/documentation/layout/container/" target="_blank"> Bluma</a> CSS
-            </li>
+						      			<a :href="post.link">{{post.title}}</a>
 
-            <li>
-              <i class="fa fa-fw fa-code"></i> <a href="http://fontawesome.io/icons/" target="_blank">Font-Awesome</a> Icons
-            </li>
+						      			<p><em>by {{post.author}}</em></p>
 
-            <li>
-              <i class="fa fa-fw fa-code"></i> <a href="https://unsplash.it/">Unplash.it</a> placeholder images
-            </li>
+										<p>{{post.body}}</p>
+							        
+							        </div> <!-- end content -->
 
-      		</ul>
+							        <nav class="level is-mobile">
 
-      	</div>
+								        <div class="level-left">
 
-      </div>
+							          		<a class="level-item">
+							            		<span class="icon is-small"><i class="fa fa-reply"></i></span>
+						          			</a>
+							          		<a class="level-item">
+								            	<span class="icon is-small"><i class="fa fa-retweet"></i></span>
+							          		</a>
+							          		<a class="level-item">
+								            	<span class="icon is-small"><i class="fa fa-heart"></i></span>
+							          		</a>
 
-    </div>
-  </section>
+								        </div> <!-- end level-left -->
 
-  <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          Yay! <strong>The Footer</strong> which means you can stop scrolling.
-        </p>
-        <p>
-          <a class="icon" href="#">
-            <i class="fa fa-money"></i>
-          </a>
-        </p>
-      </div>
-    </div>
-  </footer>
+							      	</nav>
 
-</body>
+						        </div> <!-- end media content -->
+
+				        	</article>
+							
+						</div> <!-- end box -->
+							
+						<br>
+
+						</div> <!-- end v-for loop area -->
+
+		  			</div> <!-- end Posts column -->
+
+				</div> <!-- end columns -->
+
+			</diz> <!-- end container -->
+
+		</section>
+
+	</div> <!-- end Vue2 root div-->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Footer</strong> which means this is the bottom of the page.
+				</p>
+				<p>
+					<a class="icon" href="#">
+					  <i class="fa fa-diamond"></i>
+					</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	
+	</body>
+
+	<script src="https://unpkg.com/vue" ></script>
+	<script src="awesome.js"></script>
+
 </html>
