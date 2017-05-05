@@ -22,8 +22,8 @@ const app = new Vue({
 				'First Post! Yay!',
 				'https://google.com',
 				'An Author',
-				'https://unsplash.it/200',
-				 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
+				'http://slodive.com/wp-content/uploads/2012/07/real-pictures-of-jesus/devine-jesus.jpg',
+				 'being indian instantly makes you indian'
 				),
 
 			new Post(
@@ -31,7 +31,7 @@ const app = new Vue({
 				'https://vuejs.org',
 				'Sammie Author',
 				'img-200.jpg',
-				'This has a local image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
+				'Marley is mean and Rai wasn\'t right'
 				),
 
 			new Post(
@@ -39,7 +39,7 @@ const app = new Vue({
 				'https://google.com',
 				'Bob Author',
 				'https://unsplash.it/200',
-				'Crazy Fredrick bought many very exquisite opal jewels. Lonsectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
+				'Hey whoever asked Rai if he was gay do not worry he is not'
 				),
 
 			new Post(
@@ -47,7 +47,7 @@ const app = new Vue({
 				'https://vuejs.org',
 				'Jane Author',
 				'https://unsplash.it/200',
-				'We promptly judged antique ivory buckles for the next prize. Adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
+				'When i die i might as well go out high as balls'
 				),
 
 			new Post(
