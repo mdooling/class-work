@@ -19,27 +19,27 @@ const app = new Vue({
 		postlist: [
 		
 		new Post(
-				'First Post! Yay!',
-				'https://google.com',
-				'An Author',
-				'http://slodive.com/wp-content/uploads/2012/07/real-pictures-of-jesus/devine-jesus.jpg',
-				 'being indian instantly makes you indian'
+				'Farmers Only!',
+				'https://www.farmersonly.com',
+				'Lonely rednecks inc.',
+				'http://images1.phoenixnewtimes.com/imager/u/original/8997139/img_0018.jpg',
+				 'For all your Farming needs, Farmers Only is the site for you'
 				),
 
 			new Post(
-				'Second Post: Lorem',
-				'https://vuejs.org',
-				'Sammie Author',
-				'img-200.jpg',
-				'Marley is mean and Rai wasn\'t right'
+				'Are you christian?',
+				'https://www.christianmingle.com',
+				'Jesus Christ',
+				'https://s-media-cache-ak0.pinimg.com/originals/4b/22/f2/4b22f26391eb6a22fa74110417179e45.jpg',
+				'Are you single and ready to mingle? Then Christian mingle is the site for you!'
 				),
 
 			new Post(
-				'This Post: Crazy Fredrick',
+				'Ugly Schmucks Welcome',
 				'https://google.com',
 				'Bob Author',
-				'https://unsplash.it/200',
-				'Hey whoever asked Rai if he was gay do not worry he is not'
+				'http://www.uglyschmucks.com',
+				'If your an asshole and happen to be very unattractive, then this site is the place for you!'
 				),
 
 			new Post(
