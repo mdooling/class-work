@@ -36,18 +36,18 @@ const app = new Vue({
 
 			new Post(
 				'Ugly Schmucks Welcome',
-				'https://google.com',
-				'Bob Author',
 				'http://www.uglyschmucks.com',
+				'Moses',
+				'https://uproxx.files.wordpress.com/2010/07/steve_carell_despicable_schmucks.jpg?quality=100&w=650',
 				'If your an asshole and happen to be very unattractive, then this site is the place for you!'
 				),
 
 			new Post(
-				'Another Post: Promptly judged',
-				'https://vuejs.org',
-				'Jane Author',
-				'https://unsplash.it/200',
-				'When i die i might as well go out high as balls'
+				'Clown Dating',
+				'http://www.clowndating.com',
+				'Krusty the Clown',
+				'https://static.pexels.com/photos/39242/clown-creepy-grinning-facepaint-39242.jpeg',
+				'For the single circus performer with a sensitive side! Children also welcome.'
 				),
 
 			new Post(
@@ -55,7 +55,7 @@ const app = new Vue({
 				'https://google.com',
 				'Anptoght Author',
 				'https://unsplash.it/200',
-				'Jaded zombies acted quaintly but kept driving their oxen forward. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
+				''
 				)
 		]
 	},
