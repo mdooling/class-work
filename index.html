@@ -7,7 +7,24 @@
 	<title>One Page Awesomer</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		.maybered{
+			color: #E8ACD3
+		}
+		.maybepurple{
+			color: #BF4CED
+		}
+		.maybepink{
+			color: #CF49B1}
+			
+			a.button.maybepink{
+			border: solid 2px #CF49B1;
+			}
+	</style>
 </head>
+
+	
 	<body>
 	<div id="root">
 
@@ -19,7 +36,7 @@
 
 			      <div class="column"> <!-- search column -->
 
-			      	<h3 class="title">Search Dating Sites</h1>
+			      	<h3 class="title maybered">Search Dating Sites</h1>
 
 		      		<hr>
 
@@ -30,7 +47,7 @@
 					<br>
 
 					<p>
-						<a class="button is-primary is-outlined" href="../index.html">Home</a>
+						<a class="button is-primary is-outlined maybepink" href="../index.html">Home</a>
 					</p>
 					
 
@@ -38,7 +55,7 @@
 
 		      	<div class="column is-two-thirds"> <!-- post column -->
 
-		      		<h3 class="title">Sites</h1>
+		      		<h3 class="title maybered">Sites</h1>
 		      		<hr>
 
 						<div v-for="post in filterlist">
@@ -74,13 +91,13 @@
 								        <div class="level-left">
 
 							          		<a class="level-item">
-							            		<span class="icon is-small"><i class="fa fa-reply"></i></span>
+							            		<span class="icon is-small"><i class="fa fa-reply maybepurple"></i></span>
 						          			</a>
 							          		<a class="level-item">
-								            	<span class="icon is-small"><i class="fa fa-retweet"></i></span>
+								            	<span class="icon is-small"><i class="fa fa-retweet maybepurple"></i></span>
 							          		</a>
 							          		<a class="level-item">
-								            	<span class="icon is-small"><i class="fa fa-heart"></i></span>
+								            	<span class="icon is-small"><i class="fa fa-heart maybepurple"></i></span>
 							          		</a>
 
 								        </div> <!-- end level-left -->

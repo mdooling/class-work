@@ -51,11 +51,11 @@ const app = new Vue({
 				),
 
 			new Post(
-				'Last Post: Jaded zombies',
-				'https://google.com',
-				'Anptoght Author',
-				'https://unsplash.it/200',
-				''
+				'For all the Kute Kamines',
+				'https://www.indiamatch.com/?sid=124&afid=GGN23082&st=indian%20dating%20site&ds=&stype=std&cid=3567079899&agn=HV-%20Indian%20Dating%20Sites&gclid=CN2ZjIylsdQCFYiVfgodEDUAKA',
+				'Pretish',
+				'https://www.proximeety.net/photos/I/N//INDIAN_DUDE16_2.JPG',
+				'For all you folks that put the Desi in Desirable... India match is the place for you'
 				)
 		]
 	},
